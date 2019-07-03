@@ -1,3 +1,3 @@
 module.exports = function btoa(str) {
-  return new Buffer(str).toString('base64')
+  return Buffer.from(str).toString('base64')
 }
