@@ -15,7 +15,7 @@ var encoded = btoa(decoded)
 However in Node, it's done like so:
 
 ``` javascript
-var encoded = new Buffer(decoded).toString('base64')
+var encoded = Buffer.from(decoded).toString('base64')
 ```
 
 You can easily check if `Buffer` exists and switch between the approaches
